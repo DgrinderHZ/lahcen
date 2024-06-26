@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Improvement & Appliance Repair</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&family=Poppins:wght@400;700&family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -46,8 +47,8 @@
                 <h3>Plumbing</h3>
             </div>
             <div class="service">
-                <img src="images/lavadora.jpg" alt="electrical">
-                <h3>electrical</h3>
+                <img src="images/lavadora.jpg" alt="Electrical">
+                <h3>Electrical</h3>
             </div>
             <div class="service">
                 <img src="images/lavadora.jpg" alt="Carpentry">
@@ -66,7 +67,7 @@
                 <h3>Odd Jobs</h3>
             </div>
         </section>
-         <section id="contact" class="contact-whatsapp">
+        <section id="contact" class="contact-whatsapp">
             <h2>Contact Us</h2>
             <a href="https://wa.me/34642580697" target="_blank" class="whatsapp-link">
                 <img src="images/wa-whatsapp-icon.png" alt="WhatsApp Icon">
@@ -82,7 +83,6 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
