@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#logo {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#logo img {
+  max-width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Ensure items stretch to the same height */
+  padding: 2rem 1rem;
+  background-color: #002e5b;
+  color: #fff;
+  height: 100vh; /* Make hero section full viewport height */
+  box-sizing: border-box;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #ffcc00;
+}
+
+.hero-text p {
+  margin-top: 1rem;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  color: #ff9900;
+  margin-top: 1rem;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: 100%; /* Make image height 100% of hero section */
+  object-fit: cover; /* Ensure image covers the section properly */
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.service {
+  border: 1px solid #ddd;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  aspect-ratio: 1;
+  /* ... other properties ... */
+  position: relative;
+  float: left;
+  width: calc(12% - 2px);
+  margin-left: 1%;
+  margin-bottom: 1%;
+  border: solid 1px #e4e4e4;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+  -webkit-transform: scale(1, 1);
+  -webkit-transform-origin: 50% 50%;
+  transform: scale(1, 1);
+  transform-origin: 50% 50%;
+  -webkit-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  /* ... other properties ... */
+  border-radius: inherit;
+}
+
+.services-overview,
+.contact-whatsapp {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.contact-whatsapp a.whatsapp-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  background-color: #25d366;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.contact-whatsapp a.whatsapp-link img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.contact-whatsapp a.whatsapp-link:hover {
+  background-color: #128c7e;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
