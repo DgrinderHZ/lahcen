@@ -44,7 +44,7 @@ header {
 }
 
 #logo table span {
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Montserrat", sans-serif;
   color: #f18705;
   margin-left: 15px;
@@ -153,6 +153,21 @@ nav ul li a:hover {
 
   .hero-image img {
     height: auto; /* Adjust image height to auto */
+  }
+
+  #logo table td {
+    padding: 0.5rem;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  #logo table span {
+    font-size: 31px;
+    font-family: "Montserrat", sans-serif;
+    color: #f18705;
+    margin-left: 15px;
+    font-weight: bold;
   }
 }
 
