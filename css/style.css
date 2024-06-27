@@ -141,6 +141,19 @@ nav ul li a:hover {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+  nav ul li {
+    display: inline-block;
+    margin: 12px 12px 0 12px;
+  }
+
+  nav ul li a {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem; /* Increase font size */
+    padding: 0.2rem 0.8rem 0.2rem 0.8rem; /* Add some padding for better spacing */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  }
   .hero {
     flex-direction: column; /* Stack text and image vertically */
     align-items: center; /* Center the items */
