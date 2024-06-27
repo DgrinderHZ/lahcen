@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -16,6 +16,9 @@ header {
 }
 
 #logo {
+  display: flex;
+   align-items: center;
+  justify-content: center;
   width: 100%;
   background-color: #fff;
   text-align: center;
@@ -26,6 +29,28 @@ header {
   max-width: 100px;
 }
 
+#logo table {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left; /* Optional: Align text to the left */
+  margin: 0; /* Remove any default margin */
+}
+
+#logo table td {
+  padding: 0.5rem;
+  color: #000000;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+#logo table span {
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: #f18705;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -34,12 +59,17 @@ nav ul {
   justify-content: center; /* Center the nav items */
 }
 
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+}
+
 nav ul li {
   display: inline-block;
   margin: 15px 15px 0 15px;
 }
 
 nav ul li a {
+  font-family: 'Poppins', sans-serif;
   color: #fff;
   text-decoration: none;
   font-size: 1.5rem; /* Increase font size */
@@ -72,7 +102,10 @@ nav ul li a:hover {
   justify-content: center;
 }
 
+
+
 .hero-text h1 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
 }
 
@@ -86,10 +119,11 @@ nav ul li a:hover {
   margin-top: 1rem;
 }
 
-.hero-text h2 {
+.hero-text h2 a{
   font-size: 2rem;
   color: #ff9900;
   margin-top: 1rem;
+  text-decoration: none;
 }
 
 .hero-image {
@@ -164,6 +198,10 @@ nav ul li a:hover {
     height: auto;
     border-radius: 50%; /* Ensure image is also a circle */
     margin-bottom: 10px;
+}
+
+.service a {
+  text-decoration: none;
 }
 
 .service:hover {
