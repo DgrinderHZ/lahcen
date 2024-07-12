@@ -87,7 +87,9 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #ffffff; /* Change background color on hover */
   color: #000000; /* Change text color on hover */
-  padding: 4px;
+  text-decoration: none;
+  font-size: 1.5rem; /* Increase font size */
+  padding: 0.2rem 1rem 0.2rem 1rem; /* Add some padding for better spacing */
 }
 
 .hero {
@@ -193,16 +195,19 @@ nav ul li a:hover {
 }
 
 .service img {
-  width: 80%; /* Adjust image width to fit inside the circle */
+  width: 60%; /* Adjust image width to fit inside the circle */
   height: auto;
-  border-radius: 50%; /* Ensure image is also a circle */
-  margin-bottom: 10px;
+  border-radius: 10%; /* Ensure image is also a circle */
+  margin-top: 14px;
 }
 
 .service a {
   text-decoration: none;
 }
 
+.service h3 {
+  margin-top: 0px;
+}
 .service:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -256,7 +261,9 @@ footer {
   nav ul li a:hover {
     background-color: #ffffff; /* Change background color on hover */
     color: #000000; /* Change text color on hover */
-    padding: 8px;
+     text-decoration: none;
+    font-size: 1.2rem; /* Increase font size */
+    padding: 0rem 1.5rem 0rem 1.5rem; /* Add some padding for better spacing */
   }
 
   .hero {
@@ -343,7 +350,9 @@ footer {
   nav ul li a:hover {
     background-color: #ffffff; /* Change background color on hover */
     color: #000000; /* Change text color on hover */
-    padding: 7px;
+    text-decoration: none;
+    font-size: 1rem; /* Increase font size */
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem; /* Add some padding for better spacing */
   }
 
   .hero {
