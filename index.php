@@ -63,6 +63,11 @@ $servicios = $repository->getAllServicios();
       Nuestro WhatsApp <br />
       6 55 50 90 67
     </a>
+    <a href="/contact.php" class="email-link">
+      <img src="images/mail-1454732_640.png" alt="email" />
+      <br />
+      Contacto 
+    </a>
 
   </section>
 

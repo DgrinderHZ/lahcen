@@ -1,4 +1,7 @@
 <?php
+include_once("header.php");
+?>
+<?php
 if (isset($_POST['submit'])) {
     $name = filter_var($_POST['name'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
@@ -13,29 +16,42 @@ if (isset($_POST['submit'])) {
 
         mail($to, $subject, $message, $headers);
 
-        echo 'Merci de nous avoir contacté! Nous vous répondrons dans les plus brefs délais.';
+        // Rediriger l'utilisateur vers une page de succès
+       header('Location: success.php');
+       exit;
     } else {
-        echo 'Erreur : l\'adresse e-mail est invalide.';
+        echo '<h2 style="color: red; text-align: center;">Error: la dirección de correo electrónico es inválida.</h2>';
     }
 }
 ?>
+<main>
+  <section id="contact">
+    <h2>Formulaire de contacto</h2>
+    <div class="container">
+      <form action="contact.php" method="post">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Ingrese su correo electrónico">
+        </div>
+        <div class="form-group">
+          <label for="subject">Asunto:</label>
+          <input type="text" id="subject" name="subject" class="form-control" placeholder="Ingrese el asunto de su mensaje">
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" class="form-control" placeholder="Ingrese su mensaje"></textarea>
+        </div>
+        <input type="submit" value="Enviar" name="submit" class="btn btn-primary">
+      </form>
+    </div>
+  </section>
+</main>
+<?php include_once("footer.php")?>
+<script src="js/script.js"></script>
+</body>
 
-<form action="contact.php" method="post">
-    <label for="name">Nom :</label>
-    <input type="text" id="name" name="name">
-
-
-    <label for="email">Adresse e-mail :</label>
-    <input type="email" id="email" name="email">
-
-
-    <label for="subject">Objet :</label>
-    <input type="text" id="subject" name="subject">
-
-
-    <label for="message">Message :</label>
-    <textarea id="message" name="message"></textarea>
-
-
-    <input type="submit" value="Envoyer">
-</form>
+</html>
