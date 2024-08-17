@@ -16,8 +16,14 @@ $servicios = $repository->getAllServicios();
         </br>
         Si busca un servicio de reparación de electrodomésticos en
         Tarragona, contacte con nuestro equipo de profesionales
-        cualificados. Ofrecemos un servicio personalizado y cercano para que
-        sus equipos vuelvan a estar en perfectas condiciones. Solo contáctenos, evaluaremos su caso y le asignaremos al mejor
+        cualificados. 
+        <br>
+        <br>
+        Ofrecemos un servicio personalizado y cercano para que
+        sus equipos vuelvan a estar en perfectas condiciones. 
+        <br> 
+        <br> 
+        Solo contáctenos, evaluaremos su caso y le asignaremos al mejor
         profesional. No importa el electrodoméstico, la marca o el modelo:
         garantizamos la reparación con nuestra experiencia y conocimientos.
         </br>
@@ -41,7 +47,7 @@ $servicios = $repository->getAllServicios();
     <h2>Nuestros Servicios</h2>
     <?php foreach ($servicios as $servicio) : ?>
       <div class="service">
-        <a href="service.php?serv=<?php echo $servicio->getName(); ?>">
+        <a href="service.php?id=<?php echo $servicio->getIdService(); ?>">
           <img src="images/<?= str_replace(" ", "", strtolower($servicio->getName())) . '.jpg' ?>" alt="<?= $servicio->getName() ?>" />
           <h3><a href="service.php?serv=<?php echo $servicio->getName(); ?>"><?php echo $servicio->getName(); ?></a></h3>
         </a>
